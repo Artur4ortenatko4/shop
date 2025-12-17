@@ -1,0 +1,1 @@
+<!DOCTYPE html><html><head><title>Відгуки</title></head><body><h1>Залишити відгук</h1><form method="POST"><textarea name="feedback_text"></textarea><br><button type="submit">Надіслати</button></form><h2>Всі відгуки:</h2>{% for fb in feedbacks %}<p>{{ fb.text }} (Рейтинг: {{ fb.rating }})</p>{% endfor %}</body></html>
